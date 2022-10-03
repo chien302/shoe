@@ -1,0 +1,234 @@
+.product-filter {
+    position: relative;
+
+    &-field {
+        position: fixed;
+        left: -44%;
+        top: 0;
+        bottom: 0;
+        width: 10rem;
+        display: flex;
+        flex-direction: column;
+        background-color: #fff;
+        box-shadow: 2px 5px 0 0 #f5f5f5;
+        z-index: 20;
+        height: 100%;
+        padding: 1.2rem 1rem;
+        // display: none;
+    }
+
+    &-icon {
+        text-align: right;
+
+        svg {
+            padding: 0.2rem;
+            cursor: pointer;
+            font-size: 1.5rem;
+        }
+    }
+
+    &-info {
+        display: flex;
+        flex-direction: column;
+        margin-top: 0.4rem;
+
+        h6 {
+            font-size: 1.2rem;
+            font-weight: 500;
+        }
+
+        label {
+            margin-bottom: 0.2rem;
+            display: flex;
+            align-items: stretch;
+
+            input {
+                margin-right: 0.5rem;
+            }
+        }
+    }
+
+    &-delete {
+        margin-top: 0.4rem;
+        text-align: right;
+
+        button {
+            border: none;
+            padding: 0.2rem 1rem;
+            border-radius: 0.4rem;
+            font-weight: 600;
+            background-color: #000;
+            cursor: pointer;
+            color: #fff;
+        }
+    }
+}
+
+.allitem {
+    margin-top: 1rem;
+
+    &-heading {
+        font-weight: 600;
+        font-size: 1.5rem;
+    }
+
+    &-content {
+        color: rgb(14, 14, 14);
+        font-size: 1rem;
+    }
+}
+
+.price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+
+
+    p {
+        padding: 0.4rem 0.6rem;
+        border: 1px solid #000;
+        cursor: pointer;
+        font-size: 0.95rem;
+        font-weight: 500;
+    }
+
+    p:hover {
+        background-color: #000;
+        color: #fff;
+    }
+}
+
+.list-item {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.filter {
+    &-btn {
+        position: fixed;
+        bottom: 2rem;
+        right: 2rem;
+        padding: 0.45rem 1.2rem;
+        border-radius: 0.4rem;
+        font-weight: 600;
+        background-color: #000;
+        cursor: pointer;
+        color: #fff;
+    }
+}
+
+.filter-btn:hover {
+    background-color: #fff;
+    opacity: 0.8;
+    color: #000;
+    border: 0.5px solid #909090;
+}
+
+.transformElement {
+    transform: translateX(100%);
+    transition: all 0.27s linear;
+}
+
+.transformElementHide {
+    transform: translateX(-100%);
+    transition: all 0.27s linear;
+}
+
+.product-filter-col-3,
+.input-search {
+    display: none;
+}
+
+@media screen and (min-width:1200px) {
+    .pagination-content {
+        display: block;
+        position: absolute;
+        margin: 0 auto;
+        bottom: 0;
+        // transform: translateX(100%);
+
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    .pagination-content {
+        display: none;
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+    .filter {
+        display: none;
+    }
+
+    .allitem {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    .input-search {
+        display: block;
+        outline: none;
+        padding: 0.4rem 0.5rem;
+        margin-left: 4rem;
+    }
+
+
+    .product-filter-col-3 {
+        position: relative;
+        display: block;
+        flex: 0 0 auto;
+        width: 25% !important;
+    }
+
+    .product-filter-delete {
+        text-align: left;
+    }
+
+    .product-filter-col-9 {
+        flex: 0 0 auto;
+        width: 75% !important;
+        padding-bottom: 3rem;
+    }
+
+
+}
+
+@media screen and (min-width: 415px) {
+    .transformElement {
+        transform: translateX(160%);
+        transition: all 0.27s linear;
+    }
+
+    .transformElementHide {
+        transform: translateX(-100%);
+        transition: all 0.27s linear;
+    }
+}
+
+// @media screen and (min-width: 414px) {
+//     .transformElement {
+//         transform: translateX(113%);
+//         transition: all 0.27s linear;
+//     }
+
+//     .transformElementHide {
+//         transform: translateX(-100%);
+//         transition: all 0.27s linear;
+//     }
+// }
+
+@media screen and (min-width: 768px) {
+    .transformElement {
+        transform: translateX(210%);
+        transition: all 0.27s linear;
+    }
+
+    .transformElementHide {
+        transform: translateX(-100%);
+        transition: all 0.27s linear;
+    }
+}

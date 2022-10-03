@@ -1,0 +1,136 @@
+.item-container {
+    position: relative;
+    margin: 0 0.3rem;
+    background-color: #fff;
+    border-radius: 0.2rem;
+    min-height: 280px;
+}
+
+.item {
+    margin: 0 0.5rem;
+    text-decoration: none;
+    color: #000;
+
+    &-sale {
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 0.3rem 0.2rem 0.1rem;
+        z-index: 8;
+        background: rgba(253, 215, 56, 1);
+        opacity: 0.8;
+    }
+
+    &-sale::before {
+        content: "";
+        position: absolute;
+        border-width: 0px 18.1px 4px;
+        border-style: solid;
+        border-color: transparent rgb(253, 215, 56) transparent rgb(253, 215, 56);
+        bottom: -4px;
+        left: 0;
+    }
+
+    &-header {
+        position: relative;
+        border-bottom: 1px solid #cad1de;
+    }
+
+    &-img {
+        width: 100%;
+    }
+
+    &-buy {
+        position: absolute;
+        bottom: -3rem;
+        // display: flex;
+        display: none;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0.4rem 0.5rem;
+        background-color: #e2e8f0;
+        border-radius: 0.5rem;
+
+        transition: all 0.2s linear;
+
+        p {
+            margin: 0;
+            padding-right: 7rem;
+            border-right: 1px solid #b1baca;
+            font-size: 0.9rem;
+            cursor: pointer;
+
+            svg {
+                color: #000;
+                font-size: 1.2rem;
+                margin-left: 0.5rem;
+            }
+        }
+
+        a {
+            color: #000;
+
+            svg {
+                font-size: 1.2rem;
+
+            }
+        }
+
+    }
+
+    &-info {
+        margin-top: 0.3rem;
+        padding: 0 0.3rem;
+    }
+
+    &-title {
+        font-size: 0.9rem;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        margin-bottom: 1.5rem;
+    }
+
+    &-price {
+        position: absolute;
+        bottom: 0.5rem;
+
+        span:first-child {
+            font-weight: 600;
+            margin-right: 0.7rem;
+        }
+
+        span:last-child {
+            font-size: 0.7rem;
+            background-color: #fef08a;
+            border-radius: 0.2rem;
+        }
+    }
+}
+
+// .item:hover .item-buy {
+//     display: flex;
+//     transform: translateY(-3rem);
+// }
+.item:hover {
+    color: #000;
+}
+
+.item-buy:hover p {
+    color: rgb(116, 114, 114);
+}
+
+
+// @media screen and (min-width: 1024px) {
+//     .item-container {
+//         flex: 0 0 auto;
+//         width: 55%;
+//     }
+
+//     .item {
+//         &-img {
+//             width: 100%;
+//         }
+//     }
+// }

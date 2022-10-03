@@ -1,0 +1,40 @@
+.footer {
+    // position: absolute;
+    // bottom: 0;
+    padding: 2.5rem 0;
+    margin-bottom: 3rem;
+
+    &-list {
+        list-style: none;
+        display: flex;
+        align-items: flex-end;
+        margin: 0;
+        padding: 0;
+    }
+
+    &-item {
+        margin-right: 1.5rem;
+    }
+
+    &-img {
+        width: 30px;
+    }
+
+    &-list-policy {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    h5 {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .footer {
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+}

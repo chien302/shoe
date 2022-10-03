@@ -1,0 +1,140 @@
+.checkout {
+
+    &-bill {
+        &-input {
+            padding: 1rem;
+            border: 1px solid #a3a3a3;
+
+            &-field {
+                display: flex;
+                flex-direction: column;
+
+                input {
+                    border: 1px solid #c1c1c1;
+                    padding: 0.3rem 0.6rem;
+                    outline: none;
+                }
+            }
+        }
+
+        &-pay {
+            margin-top: 1.5rem;
+            padding: 1rem;
+            border: 1px solid #a3a3a3;
+
+            &-field {
+                display: flex;
+                align-items: center;
+                margin-bottom: 0.5rem;
+
+                input {
+                    margin-right: 0.5rem;
+                }
+
+                span {
+                    font-size: 0.94rem;
+
+                    svg {
+                        margin-right: 0.2rem;
+                    }
+                }
+            }
+        }
+    }
+
+    &-item {
+        padding-top: 2rem;
+
+        &-title {
+            font-size: 1.4rem;
+            font-weight: 500;
+        }
+
+        &-product {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1.5rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 13px solid #f1f1f1;
+
+            img {
+                width: 100%;
+            }
+
+            &-info {
+                font-size: 1rem;
+                font-weight: 500;
+
+                p:first-child {
+                    overflow: hidden;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 2;
+                    -webkit-box-orient: vertical;
+                }
+            }
+        }
+    }
+
+    &-pay {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        border-top: 1px solid #b1b1b1;
+        background-color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0.7rem 0;
+
+        p {
+            font-size: 1rem;
+            font-weight: 500;
+            margin-bottom: 0;
+        }
+
+        button {
+            background-color: #000;
+            color: #fff;
+            padding: 0.7rem 0.5rem;
+            border-radius: 0.2rem;
+        }
+    }
+
+    .cart-empty {
+        margin-top: 3rem;
+        margin-bottom: 350px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .checkout-bill {
+        display: flex;
+        align-items: stretch;
+        justify-content: space-between;
+
+        &-input {
+            min-width: 500px;
+        }
+
+        &-pay {
+            margin-top: 0;
+            min-width: 450px;
+
+            h3 {
+                margin-bottom: 1.5rem;
+            }
+
+            &-field {
+                margin-bottom: 1rem;
+
+                span {
+                    font-size: 1.2rem;
+                    margin-left: 0.5rem;
+                }
+            }
+        }
+    }
+
+
+}

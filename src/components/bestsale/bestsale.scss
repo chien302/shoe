@@ -1,0 +1,44 @@
+.bestsale {
+    // margin-top: 2.4rem;
+    padding: 2.5rem;
+    background-color: #f5f5f5;
+
+    &-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        p {
+            position: relative;
+            font-size: 1.5rem;
+            font-weight: 600;
+            background-color: #fcd34d;
+            line-height: 1.2;
+            padding: 0.1rem 0.3rem;
+        }
+
+        p::after {
+            content: " ";
+            position: absolute;
+            border-width: 16px 28px 16px;
+            right: -56px;
+            top: 0;
+            border-style: solid;
+            border-color: transparent transparent transparent #fcd34d;
+        }
+
+        a {
+            text-decoration: none;
+            color: #000;
+            font-size: 1rem;
+            font-weight: 600;
+        }
+
+    }
+}
+
+// @media screen and (min-width: 1024px) {
+//     .slick-slide {
+//         width: 300px;
+//     }
+// }
